@@ -1,0 +1,140 @@
+
+
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-white footer">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                <a href="index.html" class="d-inline-block mb-3">
+                    <h1 class="text-primary">𝓣𝓪𝓽𝓽𝓸𝓸 𝓔𝓵𝓮𝓰𝓪𝓷𝓬𝓮</h1>
+                </a>
+                <p class="mb-0">We partner with top artists around the world to ensure your tattoo experience is safe and convenient. Browse through our partners to find the right artist for your tattoo idea.</p>
+            </div>
+            <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                <h5 class="mb-4">Get In Touch</h5>
+                <p><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
+                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                <div class="d-flex pt-2">
+                    <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-outline-primary me-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                <h5 class="mb-4">Popular Link</h5>
+                <a class="btn btn-link" href="">About Us</a>
+                <a class="btn btn-link" href="">Contact Us</a>
+                <a class="btn btn-link" href="">Privacy Policy</a>
+                <a class="btn btn-link" href="">Terms & Condition</a>
+                <a class="btn btn-link" href="">Career</a>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-dark mb-3"><span class="fw-light text-dark">Let's Subscribe</span> The Newsletter</h2>
+                <p class="text-dark mb-4">Subscribe now to get 30% discount on any of our Service</p>
+            </div>
+            <div class="row">
+                <div class="col-md-5 bg-white"></div>
+                <div class="col-md-7 text-right wow fadeIn" data-wow-delay="0.5s">
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-dark" type="text" placeholder="Enter Your Email" cols="6">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i class="fa fa-paper-plane text-white fs-4"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wow fadeIn" data-wow-delay="0.1s">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; <a class="border-bottom border-dark" href="#">Your Site Name</a>, All Right Reserved.
+
+                    <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <div class="footer-menu border-dark">
+                        <a href="">Home</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FAQs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to Top -->
+<a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/wow/wow.min.js"></script>
+<script src="lib/easing/easing.min.js"></script>
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+<!-- Password Toggle Script -->
+<script>
+    const togglePassword = document.querySelector('#togglePassword');
+    const password = document.querySelector('#password');
+
+    togglePassword.addEventListener('change', function () {
+        // Toggle the type attribute
+        const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+        password.setAttribute('type', type);
+    });
+</script>
+
+<!-- Form Validation Script -->
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        var email = document.getElementById('email');
+        var number = document.getElementById('number');
+        
+        // Email validation
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]{3,}$/;
+        if (!emailPattern.test(email.value)) {
+            alert('Please enter a valid email address.');
+            email.focus();
+            event.preventDefault();
+            return false;
+        }
+
+        // Phone number validation
+        var numberPattern = /^[0-9]{10}$/;
+        if (!numberPattern.test(number.value)) {
+            alert('Please enter a valid 10-digit phone number.');
+            number.focus();
+            event.preventDefault();
+            return false;
+        }
+        
+        return true;
+    });
+</script>
+
+<!-- Date Validation Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var dateInput = document.querySelector('input[type="date"]');
+        if (dateInput) {
+            var today = new Date().toISOString().split('T')[0];
+            dateInput.setAttribute('min', today);
+        }
+    });
+</script>
+
+</body>
+
+</html>
